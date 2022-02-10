@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ip Address Location Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+</head>
+
+<body>
+  <div id="wrap">
+    <div id="top"></div>
+    <div id="map"></div>
+    <div id="over">
+       <h2>IP Address Tracker</h2>
+       <div id="inputDiv">
+         <input type="text" value="" placeholder="Input an IP to get its info" />
+         <div id="arrow" onclick="manualIp()"></div>
+       </div>
+       <div id="result">
+         <div id="ip">
+            <p>IP ADDRESS</p>
+            <h3>...</h3>
+         </div>
+         <div id="location">
+            <p>LOCATION</p>
+            <h3>...</h3>
+         </div>
+         <div id="timezone">
+            <p>TIME ZONE</p>
+            <h3>...</h3>
+         </div>
+         <div id="isp">
+            <p>ISP</p>
+            <h3>...</h3>
+         </div>
+       </div>
+    </div>
+    
+  </div>
+</body>
+<script src="location.js"></script>
+</html>
